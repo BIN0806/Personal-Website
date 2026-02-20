@@ -59,7 +59,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8"
+            className="flex items-center justify-center pt-8"
           >
             <button 
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg text-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg flex items-center gap-2 w-full sm:w-auto"
@@ -69,7 +69,7 @@ export default function HeroSection() {
               <Rocket className="w-5 h-5" />
               View My Work
             </button>
-            <a 
+            {/* <a 
               href="/assets/BillyNguyenResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function HeroSection() {
             >
               <FileDown className="w-5 h-5" />
               Download Resume
-            </a>
+            </a> */}
           </motion.div>
         </div>
       </div>
