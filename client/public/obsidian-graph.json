@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-31T17:46:10.892Z",
+  "generatedAt": "2026-09-13T21:20:03.834Z",
   "vault": "ObsidianVerse/MultiVerse",
-  "nodeCount": 452,
+  "nodeCount": 478,
   "linkCount": 240,
   "nodes": [
     {
@@ -21,6 +21,27 @@
     {
       "id": "Behaviorals/Interview",
       "title": "Interview",
+      "group": "Behaviorals",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "Behaviorals/Project - Inference",
+      "title": "Project - Inference",
+      "group": "Behaviorals",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "Behaviorals/Project - Monkey Type",
+      "title": "Project - Monkey Type",
+      "group": "Behaviorals",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "Behaviorals/Project - PCAP",
+      "title": "Project - PCAP",
       "group": "Behaviorals",
       "tags": [],
       "exists": true
@@ -98,8 +119,22 @@
       "exists": true
     },
     {
+      "id": "BrushUpVerse/AQR Review",
+      "title": "AQR Review",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "BrushUpVerse/Data Science",
       "title": "Data Science",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "BrushUpVerse/HFT",
+      "title": "HFT",
       "group": "BrushUpVerse",
       "tags": [],
       "exists": true
@@ -135,6 +170,13 @@
     {
       "id": "BrushUpVerse/Probability",
       "title": "Probability",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "BrushUpVerse/QR Prep",
+      "title": "QR Prep",
       "group": "BrushUpVerse",
       "tags": [],
       "exists": true
@@ -300,6 +342,13 @@
       "exists": true
     },
     {
+      "id": "CodingVerse/DevOps/Best Practices",
+      "title": "Best Practices",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "CodingVerse/DevOps/Distributed Systems",
       "title": "Distributed Systems",
       "group": "CodingVerse",
@@ -342,6 +391,13 @@
       "exists": true
     },
     {
+      "id": "CodingVerse/DevOps/Nginx",
+      "title": "Nginx",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "CodingVerse/DevOps/Timing And Clock",
       "title": "Timing And Clock",
       "group": "CodingVerse",
@@ -356,10 +412,11 @@
       "exists": true
     },
     {
-      "id": "CodingVerse/DS&A/Leetcode/Burst Balloons",
-      "title": "Burst Balloons",
+      "id": "CodingVerse/DS&A/Leetcode/Burst Balloons - DP",
+      "title": "Burst Balloons - DP",
       "group": "CodingVerse",
       "tags": [
+        "DP",
         "Leetcode"
       ],
       "exists": true
@@ -372,6 +429,15 @@
         "DP",
         "Leetcode",
         "Tabulation"
+      ],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/DS&A/Leetcode/Find Kth Lexiographical Number - Greedy + 2PTr",
+      "title": "Find Kth Lexiographical Number - Greedy + 2PTr",
+      "group": "CodingVerse",
+      "tags": [
+        "Leetcode"
       ],
       "exists": true
     },
@@ -396,6 +462,26 @@
         "Heap",
         "Leetcode",
         "SegmentTree"
+      ],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/DS&A/Leetcode/Minimum-Array-End - BIT MANIPULATION",
+      "title": "Minimum-Array-End - BIT MANIPULATION",
+      "group": "CodingVerse",
+      "tags": [
+        "BIT-MANIPULATION",
+        "Leetcode"
+      ],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/DS&A/Leetcode/Regex Pattern - DP",
+      "title": "Regex Pattern - DP",
+      "group": "CodingVerse",
+      "tags": [
+        "DP",
+        "Leetcode"
       ],
       "exists": true
     },
@@ -427,6 +513,20 @@
     {
       "id": "CodingVerse/IdeaVerse - Practical Coding/Python Testing/Testing Basics",
       "title": "Testing Basics",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/Languages/C++",
+      "title": "C++",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/Languages/Java",
+      "title": "Java",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -598,6 +698,13 @@
     {
       "id": "CodingVerse/Machine Learning/Transformers",
       "title": "Transformers",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/Machine Learning/Untitled",
+      "title": "Untitled",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -939,6 +1046,13 @@
       "exists": false
     },
     {
+      "id": "Papers/LoRA, Low-Rank Adaptation of Large Language Models",
+      "title": "LoRA, Low-Rank Adaptation of Large Language Models",
+      "group": "Papers",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "Persistent Storage",
       "title": "Persistent Storage",
       "group": "Unresolved",
@@ -1016,8 +1130,22 @@
       "exists": false
     },
     {
+      "id": "SchoolVerse/Algebra Tricks",
+      "title": "Algebra Tricks",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Compiler/CS164 Lecture 1",
       "title": "CS164 Lecture 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Data Engineering/DATA101 Lecture 1",
+      "title": "DATA101 Lecture 1",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1030,6 +1158,41 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - NLP/EECS183 Lecture 1",
+      "title": "EECS183 Lecture 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 CH 1",
+      "title": "STAT135 CH 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 CH 1.4",
+      "title": "STAT135 CH 1.4",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Lecture - X",
+      "title": "STAT135 Lecture - X",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Discussion 1",
+      "title": "CS152 Discussion 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 1",
       "title": "CS152 Lecture 1",
       "group": "SchoolVerse",
@@ -1037,15 +1200,15 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/Untitled 1",
-      "title": "Untitled 1",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 2",
+      "title": "CS152 Lecture 2",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Data Engineering/DATA101 Lecture 1",
-      "title": "DATA101 Lecture 1",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 3",
+      "title": "CS152 Lecture 3",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1053,6 +1216,13 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 1",
       "title": "CS186 Lecture 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 2",
+      "title": "CS186 Lecture 2",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1079,6 +1249,13 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/Untitled",
+      "title": "Untitled",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Linear Modeling/STAT151A Lecture 1",
       "title": "STAT151A Lecture 1",
       "group": "SchoolVerse",
@@ -1086,15 +1263,29 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - NLP/EECS183 Lecture 1",
-      "title": "EECS183 Lecture 1",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Linear Modeling/STAT151A Lecture 2",
+      "title": "STAT151A Lecture 2",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/Stat153",
-      "title": "Stat153",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Linear Modeling/Untitled",
+      "title": "Untitled",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 1",
+      "title": "STAT153 Lecture - 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/Untitled",
+      "title": "Untitled",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
