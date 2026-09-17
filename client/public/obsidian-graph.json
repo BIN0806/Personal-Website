@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-13T21:20:03.834Z",
+  "generatedAt": "2026-09-17T20:29:12.317Z",
   "vault": "ObsidianVerse/MultiVerse",
-  "nodeCount": 478,
+  "nodeCount": 489,
   "linkCount": 240,
   "nodes": [
     {
@@ -202,8 +202,64 @@
       "exists": true
     },
     {
+      "id": "CodingVerse/AI Coding/AI Engineer",
+      "title": "AI Engineer",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/Kubernetes",
+      "title": "Kubernetes",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/KV-Cache",
+      "title": "KV-Cache",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/LLM",
+      "title": "LLM",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/LLM-D",
+      "title": "LLM-D",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/LLM-Ops",
+      "title": "LLM-Ops",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/Lower-Level",
+      "title": "Lower-Level",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "CodingVerse/AI Coding/Prompts",
       "title": "Prompts",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/vLLM",
+      "title": "vLLM",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -476,12 +532,31 @@
       "exists": true
     },
     {
+      "id": "CodingVerse/DS&A/Leetcode/Neetcode 150/Min Cost to Connect Paths",
+      "title": "Min Cost to Connect Paths",
+      "group": "CodingVerse",
+      "tags": [
+        "Leetcode"
+      ],
+      "exists": true
+    },
+    {
       "id": "CodingVerse/DS&A/Leetcode/Regex Pattern - DP",
       "title": "Regex Pattern - DP",
       "group": "CodingVerse",
       "tags": [
         "DP",
         "Leetcode"
+      ],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/DS&A/SysDesign/1206. Design Skiplist",
+      "title": "1206. Design Skiplist",
+      "group": "CodingVerse",
+      "tags": [
+        "Leetcode",
+        "System-Design"
       ],
       "exists": true
     },
@@ -698,13 +773,6 @@
     {
       "id": "CodingVerse/Machine Learning/Transformers",
       "title": "Transformers",
-      "group": "CodingVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "CodingVerse/Machine Learning/Untitled",
-      "title": "Untitled",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -1144,6 +1212,34 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Computer Archieture/CS152 Discussion 1",
+      "title": "CS152 Discussion 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Computer Archieture/CS152 Lecture 1",
+      "title": "CS152 Lecture 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Computer Archieture/CS152 Lecture 2",
+      "title": "CS152 Lecture 2",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Computer Archieture/CS152 Lecture 3",
+      "title": "CS152 Lecture 3",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Data Engineering/DATA101 Lecture 1",
       "title": "DATA101 Lecture 1",
       "group": "SchoolVerse",
@@ -1162,6 +1258,22 @@
       "title": "EECS183 Lecture 1",
       "group": "SchoolVerse",
       "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/Data Analysis Code",
+      "title": "Data Analysis Code",
+      "group": "SchoolVerse",
+      "tags": [
+        "alpha",
+        "params",
+        "predicting",
+        "prediction",
+        "the",
+        "this",
+        "we",
+        "which"
+      ],
       "exists": true
     },
     {
@@ -1186,34 +1298,6 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Discussion 1",
-      "title": "CS152 Discussion 1",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 1",
-      "title": "CS152 Lecture 1",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 2",
-      "title": "CS152 Lecture 2",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Computer Archieture/CS152 Lecture 3",
-      "title": "CS152 Lecture 3",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 1",
       "title": "CS186 Lecture 1",
       "group": "SchoolVerse",
@@ -1223,6 +1307,13 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 2",
       "title": "CS186 Lecture 2",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 3",
+      "title": "CS186 Lecture 3",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1284,8 +1375,8 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/Untitled",
-      "title": "Untitled",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 2",
+      "title": "STAT153 Lecture - 2",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
