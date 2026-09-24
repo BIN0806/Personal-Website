@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-17T20:29:12.317Z",
+  "generatedAt": "2026-09-24T01:02:57.903Z",
   "vault": "ObsidianVerse/MultiVerse",
-  "nodeCount": 489,
+  "nodeCount": 498,
   "linkCount": 240,
   "nodes": [
     {
@@ -757,6 +757,13 @@
       "exists": true
     },
     {
+      "id": "CodingVerse/Machine Learning/Saas DC Workshop",
+      "title": "Saas DC Workshop",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "CodingVerse/Machine Learning/Softmax",
       "title": "Softmax",
       "group": "CodingVerse",
@@ -1198,13 +1205,6 @@
       "exists": false
     },
     {
-      "id": "SchoolVerse/Algebra Tricks",
-      "title": "Algebra Tricks",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
       "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Compiler/CS164 Lecture 1",
       "title": "CS164 Lecture 1",
       "group": "SchoolVerse",
@@ -1298,6 +1298,13 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Regression",
+      "title": "STAT135 Regression",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 1",
       "title": "CS186 Lecture 1",
       "group": "SchoolVerse",
@@ -1314,6 +1321,34 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 3",
       "title": "CS186 Lecture 3",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 4",
+      "title": "CS186 Lecture 4",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 5",
+      "title": "CS186 Lecture 5",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 6",
+      "title": "CS186 Lecture 6",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 7",
+      "title": "CS186 Lecture 7",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1368,6 +1403,13 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/Stat153 HW1",
+      "title": "Stat153 HW1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 1",
       "title": "STAT153 Lecture - 1",
       "group": "SchoolVerse",
@@ -1377,6 +1419,13 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 2",
       "title": "STAT153 Lecture - 2",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 3",
+      "title": "STAT153 Lecture - 3",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -3144,6 +3193,13 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/Strategies (HW + LAB)",
+      "title": "Strategies (HW + LAB)",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/SU2026/IdeaVerse - CyberSecurity/61C Review",
       "title": "61C Review",
       "group": "SchoolVerse",
@@ -3464,6 +3520,13 @@
       "group": "Unresolved",
       "tags": [],
       "exists": false
+    },
+    {
+      "id": "TemplateVerse/Homework Solutions",
+      "title": "Homework Solutions",
+      "group": "TemplateVerse",
+      "tags": [],
+      "exists": true
     },
     {
       "id": "TemplateVerse/Math Template",
