@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24T01:02:57.903Z",
+  "generatedAt": "2026-10-06T04:03:51.815Z",
   "vault": "ObsidianVerse/MultiVerse",
-  "nodeCount": 498,
-  "linkCount": 240,
+  "nodeCount": 512,
+  "linkCount": 241,
   "nodes": [
     {
       "id": "- Problem Solving Strategy",
@@ -126,6 +126,13 @@
       "exists": true
     },
     {
+      "id": "BrushUpVerse/BlackEdge",
+      "title": "BlackEdge",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "BrushUpVerse/Data Science",
       "title": "Data Science",
       "group": "BrushUpVerse",
@@ -175,8 +182,22 @@
       "exists": true
     },
     {
+      "id": "BrushUpVerse/Project Recap",
+      "title": "Project Recap",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "BrushUpVerse/QR Prep",
       "title": "QR Prep",
+      "group": "BrushUpVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "BrushUpVerse/Systems Prep",
+      "title": "Systems Prep",
       "group": "BrushUpVerse",
       "tags": [],
       "exists": true
@@ -204,6 +225,27 @@
     {
       "id": "CodingVerse/AI Coding/AI Engineer",
       "title": "AI Engineer",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/AI Harness",
+      "title": "AI Harness",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/AI Workflow",
+      "title": "AI Workflow",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/AI Coding/Fast Setup",
+      "title": "Fast Setup",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -435,6 +477,13 @@
     {
       "id": "CodingVerse/DevOps/Linux vs Unix",
       "title": "Linux vs Unix",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/DevOps/Mock Example",
+      "title": "Mock Example",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -752,13 +801,6 @@
     {
       "id": "CodingVerse/Machine Learning/PyTorch",
       "title": "PyTorch",
-      "group": "CodingVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "CodingVerse/Machine Learning/Saas DC Workshop",
-      "title": "Saas DC Workshop",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -1205,6 +1247,20 @@
       "exists": false
     },
     {
+      "id": "SAAS/ResembleAI/Project Scope",
+      "title": "Project Scope",
+      "group": "SAAS",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SAAS/Saas DC Workshop",
+      "title": "Saas DC Workshop",
+      "group": "SAAS",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Compiler/CS164 Lecture 1",
       "title": "CS164 Lecture 1",
       "group": "SchoolVerse",
@@ -1291,8 +1347,22 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Lecture - X",
-      "title": "STAT135 Lecture - X",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Confidence Intervals for the Population Mean",
+      "title": "STAT135 Confidence Intervals for the Population Mean",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Creating Estimators With MLE",
+      "title": "STAT135 Creating Estimators With MLE",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Creating M Estimators With MLE",
+      "title": "STAT135 Creating M Estimators With MLE",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1300,6 +1370,13 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Regression",
       "title": "STAT135 Regression",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Sampling Distribution of the Mean",
+      "title": "STAT135 Sampling Distribution of the Mean",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1354,8 +1431,29 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 8",
+      "title": "CS186 Lecture 8",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 9",
+      "title": "CS186 Lecture 9",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/DataBase",
       "title": "DataBase",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/Exam Mistakes",
+      "title": "Exam Mistakes",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -3587,6 +3685,10 @@
     {
       "source": "Behaviorals/Interview",
       "target": "Behaviorals/Resume"
+    },
+    {
+      "source": "BrushUpVerse/BlackEdge",
+      "target": "BrushUpVerse/Systems Prep"
     },
     {
       "source": "CodingVerse/AI Coding/AI Coding Set-up",
