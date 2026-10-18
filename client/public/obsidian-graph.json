@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-06T04:03:51.815Z",
+  "generatedAt": "2026-10-18T22:42:43.714Z",
   "vault": "ObsidianVerse/MultiVerse",
-  "nodeCount": 512,
-  "linkCount": 241,
+  "nodeCount": 527,
+  "linkCount": 245,
   "nodes": [
     {
       "id": "- Problem Solving Strategy",
@@ -302,6 +302,13 @@
     {
       "id": "CodingVerse/AI Coding/vLLM",
       "title": "vLLM",
+      "group": "CodingVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "CodingVerse/C++/Setup",
+      "title": "Setup",
       "group": "CodingVerse",
       "tags": [],
       "exists": true
@@ -1247,6 +1254,20 @@
       "exists": false
     },
     {
+      "id": "SAAS/Implementation",
+      "title": "Implementation",
+      "group": "SAAS",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SAAS/Model Interp",
+      "title": "Model Interp",
+      "group": "SAAS",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SAAS/ResembleAI/Project Scope",
       "title": "Project Scope",
       "group": "SAAS",
@@ -1256,6 +1277,13 @@
     {
       "id": "SAAS/Saas DC Workshop",
       "title": "Saas DC Workshop",
+      "group": "SAAS",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SAAS/Transformer",
+      "title": "Transformer",
       "group": "SAAS",
       "tags": [],
       "exists": true
@@ -1317,6 +1345,34 @@
       "exists": true
     },
     {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Time Series/Stat153 HW1",
+      "title": "Stat153 HW1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Time Series/STAT153 Lecture - 1",
+      "title": "STAT153 Lecture - 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Time Series/STAT153 Lecture - 2",
+      "title": "STAT153 Lecture - 2",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/(Audit) IdeaVerse - Time Series/STAT153 Lecture - 3",
+      "title": "STAT153 Lecture - 3",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
       "id": "SchoolVerse/FA2026/Data Analysis Code",
       "title": "Data Analysis Code",
       "group": "SchoolVerse",
@@ -1330,6 +1386,48 @@
         "we",
         "which"
       ],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Case Study - Comparing 2 Groups",
+      "title": "Case Study - Comparing 2 Groups",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Chi-Squared,T-Distrbution + T",
+      "title": "Chi-Squared,T-Distrbution + T",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Confidence Intervals for Linear Regression",
+      "title": "Confidence Intervals for Linear Regression",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Large Sample Theory for The Maximum Likelihood Estimator",
+      "title": "Large Sample Theory for The Maximum Likelihood Estimator",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Mistakes",
+      "title": "Mistakes",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Pre-Midterm Recap",
+      "title": "Pre-Midterm Recap",
+      "group": "SchoolVerse",
+      "tags": [],
       "exists": true
     },
     {
@@ -1384,6 +1482,41 @@
     {
       "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 1",
       "title": "CS186 Lecture 1",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 10",
+      "title": "CS186 Lecture 10",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 11",
+      "title": "CS186 Lecture 11",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 12",
+      "title": "CS186 Lecture 12",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 13",
+      "title": "CS186 Lecture 13",
+      "group": "SchoolVerse",
+      "tags": [],
+      "exists": true
+    },
+    {
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/CS186 Lecture 14",
+      "title": "CS186 Lecture 14",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1473,8 +1606,8 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Database/Untitled",
-      "title": "Untitled",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Database/Untitled 1",
+      "title": "Untitled 1",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -1494,36 +1627,8 @@
       "exists": true
     },
     {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Linear Modeling/Untitled",
-      "title": "Untitled",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/Stat153 HW1",
-      "title": "Stat153 HW1",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 1",
-      "title": "STAT153 Lecture - 1",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 2",
-      "title": "STAT153 Lecture - 2",
-      "group": "SchoolVerse",
-      "tags": [],
-      "exists": true
-    },
-    {
-      "id": "SchoolVerse/FA2026/IdeaVerse - Time Series/STAT153 Lecture - 3",
-      "title": "STAT153 Lecture - 3",
+      "id": "SchoolVerse/FA2026/IdeaVerse - Linear Modeling/STAT151A Pre-Midterm 1",
+      "title": "STAT151A Pre-Midterm 1",
       "group": "SchoolVerse",
       "tags": [],
       "exists": true
@@ -3777,6 +3882,22 @@
     {
       "source": "Research/LLM-D/LLM-D Research",
       "target": "CodingVerse/Machine Learning/PyTorch"
+    },
+    {
+      "source": "SAAS/ResembleAI/Project Scope",
+      "target": "SAAS/Transformer"
+    },
+    {
+      "source": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Case Study - Comparing 2 Groups",
+      "target": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Chi-Squared,T-Distrbution + T"
+    },
+    {
+      "source": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Large Sample Theory for The Maximum Likelihood Estimator",
+      "target": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Confidence Intervals for Linear Regression"
+    },
+    {
+      "source": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/STAT135 Sampling Distribution of the Mean",
+      "target": "SchoolVerse/FA2026/IdeaVerse - Applied Statistics/Chi-Squared,T-Distrbution + T"
     },
     {
       "source": "SchoolVerse/FA2026/IdeaVerse - Database/DataBase",
