@@ -1,5 +1,8 @@
 import type { BlogSetup, BlogUpdate } from "@/lib/blog";
 import { ArticleNote, ArticleSection, CodeBlock } from "@/components/blog/article-blocks";
+import chunkTwo from "./kernel-inference/chunk-two";
+import chunkThree from "./kernel-inference/chunk-three";
+import { ChunkSources, CommitSource, kernelSources } from "./kernel-inference/sources";
 
 // Adapted from this project's authored Chunk 01 post and its validation record:
 // docs/blogs/01-a-page-pool-before-a-gpu.md and evidence/01-validation.md.
@@ -7,6 +10,7 @@ import { ArticleNote, ArticleSection, CodeBlock } from "@/components/blog/articl
 function PagePoolChunk() {
   return <>
     <p className="article-lead">A KV cache sounds like a GPU data structure. But its first ownership question is a CPU question: which pages are available, which have been assigned, and when is an assignment no longer valid?</p>
+    <CommitSource source={kernelSources.one} />
     <ArticleNote>Chunk 1 is implemented in C++17 and owns CPU metadata only. No model is loaded, no GPU is involved, and infrastructure spending is $0. The validation below is correctness evidence, not a performance benchmark.</ArticleNote>
 
     <ArticleSection id="why-cpu" title="A page pool before a GPU">
@@ -120,10 +124,11 @@ UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1 ctest --test-dir build/ubsan --
 
     <ArticleSection id="next" title="What this establishes—and what comes next">
       <p>This chunk establishes a bounded pool with understandable, tested transitions: allocation uniqueness, deterministic exhaustion, checked reclamation, and stale-handle rejection within the issuing pool's lifetime.</p>
-      <p>Reference counts, request page tables, prefix sharing, transactional multi-page growth, KV payloads, and GPU memory are still planned. The pool is single-threaded and needs external serialization. There is no measured latency, throughput, or speedup result.</p>
+      <p>At the end of Chunk 1, reference counts, request page tables, prefix sharing, transactional multi-page growth, KV payloads, and GPU memory were still planned. The pool is single-threaded and needs external serialization. There is no measured latency, throughput, or speedup result.</p>
       <p>Generation checks also do not prove that a GPU has stopped reading a page. A kernel may already hold its raw physical ID; future reclamation must wait for the relevant completion.</p>
-      <p>Part 2 is planned to introduce reference counts and explicit sharing of immutable full pages. The next question to explain is why two requests can share a complete page but must not independently write the same tail—and why a zero reference count will still not be enough for immediate GPU reuse.</p>
+      <p><a href="/blog/projects/llm-kernel-inference/chunk-2-shared-pages">Part 2 now covers reference counts and explicit sharing of immutable full pages.</a> Its next question is why two requests can share a complete page but must not independently write the same tail—and why a zero reference count still will not be enough for immediate GPU reuse.</p>
     </ArticleSection>
+    <ChunkSources source={kernelSources.one} />
   </>;
 }
 
@@ -131,7 +136,7 @@ const chunkOne: BlogUpdate = {
   slug: "chunk-1-page-pool",
   title: "Part 1: A page pool before a GPU",
   summary: "The first implementation: a CPU page-ID pool with generation-tagged handles, explicit failure behavior, and recorded correctness checks. Includes the sanitizer startup problem and what remains unresolved.",
-  date: "2026-10-23",
+  date: kernelSources.one.date,
   category: "Allocator foundations",
   readingMinutes: 8,
   tags: ["C++17", "KV cache", "Memory ownership"],
@@ -144,6 +149,7 @@ const chunkOne: BlogUpdate = {
     { id: "reproduce", title: "Reproduce the first chunk" },
     { id: "sanitizer-startup", title: "The sanitizer startup problem" },
     { id: "next", title: "What comes next" },
+    { id: "sources", title: "Commit and supporting records" },
   ],
   Content: PagePoolChunk,
 };
@@ -151,9 +157,10 @@ const chunkOne: BlogUpdate = {
 const llmKernelInference: BlogSetup = {
   slug: "llm-kernel-inference",
   title: "LLM Kernel Inference",
-  description: "Building inference components in small, explained increments: a CPU page pool first, then GPU kernels and paged decode.",
-  categories: ["Allocator foundations"],
-  updates: [chunkOne],
+  description: "Building inference components in explained increments. The first three chunks cover a CPU page pool, sealed-page sharing, and transactional request tables; GPU kernels and paged decode come later.",
+  categories: ["Allocator foundations", "Shared ownership", "Request transactions"],
+  // All three commits share a calendar date; stable sorting keeps later chunks first.
+  updates: [chunkThree, chunkTwo, chunkOne],
 };
 
 export default llmKernelInference;

@@ -46,11 +46,27 @@ to America/Los_Angeles, rather than chat sidebar recency or file modification ti
 | Nolan / AMC Event Study | 2026-09-16 |
 
 The collection is in `projects/projects.tsx`. LLM Kernel Inference has its own
-`notebooks/llm-kernel-inference.tsx`, starting with Chunk 1, “A page pool before a
-GPU.” Add future chunks to its updates array. It adapts the project's authored
-post and validation record, retaining the CPU-only scope and unresolved ASan
-status. Its first article is at
-`/blog/projects/llm-kernel-inference/chunk-1-page-pool`.
+`notebooks/llm-kernel-inference.tsx` and one separate article per completed chunk:
+
+| Chunk | Article URL under `/blog/projects/llm-kernel-inference/` | Source commit in `BIN0806/GPU-Inference` |
+| --- | --- | --- |
+| 1: A page pool before a GPU | `chunk-1-page-pool` | `f1b120ee807de78aaf07987754e75fcc1a8ec3eb` |
+| 2: Sharing pages without sharing writes | `chunk-2-shared-pages` | `675a8c729712ff1bdb73cb02e2f5dfde57cf6a61` |
+| 3: Request tables that fail atomically | `chunk-3-request-transactions` | `5befbdfe44bcda7db883d6135927e98ac7ced3c2` |
+
+The posts adapt the corresponding commit's code, authored article, and validation
+record. Each exposes its commit link near the opening and a source section with
+files pinned to the full SHA. `notebooks/kernel-inference/sources.tsx` holds those
+revisions and dates. The first three commits reconstruct validated development
+snapshots; the linked history notes explain that provenance. Their date is
+2026-10-23 in America/Los_Angeles, and the updates array lists 3, 2, 1 to preserve
+that progression when calendar dates tie. The posts retain CPU-only scope,
+actual findings versus injected failures, and the unresolved ASan status.
+
+For each future completed chunk, read its commit and pinned evidence, add a new
+content component and source record, then add a separate entry to this notebook's
+updates array. Keep existing slugs and historical scope stable. Do not create
+posts for planned chunks or infer measured speedups from test durations.
 
 The other project content is in `notebooks/project-history.tsx`. Each notebook includes a short overview,
 implemented work, documented problems and solutions, the last activity, and a
