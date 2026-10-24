@@ -12,3 +12,10 @@
   from = "/api/github/activity/refresh"
   to = "/.netlify/functions/github-activity"
   status = 200
+
+# Client-side routes must also work when opened directly or refreshed.
+# Keep the API redirects above this fallback; existing static assets still win.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,7 @@
+/* Topic filters complement the dated progression log inside each setup. */
+.progression-filter { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 22px 0 28px; max-height: 156px; overflow-y: auto; scrollbar-width: none; }
+.progression-filter::-webkit-scrollbar { display: none; }
+.progression-filter button { border: 1px solid color-mix(in srgb, var(--vintage-ink) 28%, transparent); border-radius: 999px; padding: 7px 12px; font-size: 12px; line-height: 1.5; color: inherit; transition: color .15s, background .15s; }
+.progression-filter button:hover { border-color: var(--vintage-accent); color: var(--vintage-accent); }
+.progression-filter button[aria-pressed="true"] { color: var(--vintage-ink); border-color: currentColor; box-shadow: inset 0 0 0 1px currentColor; }
+.progression-filter button:focus-visible { outline: 2px solid var(--vintage-accent); outline-offset: 2px; }

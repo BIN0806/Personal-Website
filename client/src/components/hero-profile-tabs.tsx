@@ -1,13 +1,14 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { aboutMe, education, experiences, relevantCoursework } from "@/data/portfolio-data";
+import HeroBlogBrowser from "@/components/blog/hero-blog-browser";
 
-type TabId = "experiences" | "education" | "about";
+type TabId = "experiences" | "about" | "blog";
 
 const tabs = [
   { id: "experiences" as const, label: "Experiences" },
-  { id: "education" as const, label: "Education" },
   { id: "about" as const, label: "About Me" },
+  { id: "blog" as const, label: "Blog" },
 ];
 
 function CompanyLogo({
@@ -67,6 +68,7 @@ export default function HeroProfileTabs() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
+            aria-pressed={activeTab === tab.id}
             className={`text-lg font-medium transition-colors pb-0.5 border-b-2 whitespace-nowrap ${
               activeTab === tab.id
                 ? "text-primary border-primary"
@@ -80,6 +82,18 @@ export default function HeroProfileTabs() {
       </div>
 
       <AnimatePresence mode="wait">
+        {activeTab === "blog" && (
+          <motion.div
+            key="blog"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+          >
+            <HeroBlogBrowser />
+          </motion.div>
+        )}
+
         {activeTab === "experiences" && (
           <motion.div
             key="experiences"
@@ -111,62 +125,56 @@ export default function HeroProfileTabs() {
                 </li>
               ))}
             </ul>
-          </motion.div>
-        )}
-
-        {activeTab === "education" && (
-          <motion.div
-            key="education"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2 }}
-            className="text-left"
-          >
-            <SectionLabel>Education</SectionLabel>
-            <ul className="space-y-6">
-              {education.map((entry) => (
-                <li key={entry.id} className="flex items-start gap-3.5" data-testid={`education-${entry.id}`}>
-                  <CompanyLogo
-                    company={entry.school}
-                    logoUrl={entry.logoUrl}
-                    domain={entry.domain}
-                  />
-                  <div className="min-w-0 pt-0.5">
-                    <p className="text-lg font-semibold text-foreground leading-snug">
-                      {entry.school}
-                    </p>
-                    <p className="text-base text-muted-foreground mt-0.5">
-                      {entry.degree} · {entry.date}
-                      {entry.gpa ? ` · GPA ${entry.gpa}` : ""}
-                    </p>
-                    {entry.activities?.map((activity, index) => (
-                      <p key={index} className="text-base text-muted-foreground mt-1.5 leading-snug">
-                        {activity}
+            <div className="mt-10 border-t border-border/40 pt-8">
+              <SectionLabel>Education</SectionLabel>
+              <ul className="space-y-6">
+                {education.map((entry) => (
+                  <li key={entry.id} className="flex items-start gap-3.5" data-testid={`education-${entry.id}`}>
+                    <CompanyLogo
+                      company={entry.school}
+                      logoUrl={entry.logoUrl}
+                      domain={entry.domain}
+                    />
+                    <div className="min-w-0 pt-0.5">
+                      <p className="text-lg font-semibold text-foreground leading-snug">
+                        {entry.school}
                       </p>
+                      <p className="text-base text-muted-foreground mt-0.5">
+                        {entry.degree} · {entry.date}
+                        {entry.gpa ? ` · GPA ${entry.gpa}` : ""}
+                      </p>
+                      {entry.activities?.map((activity, index) => (
+                        <p key={index} className="text-base text-muted-foreground mt-1.5 leading-snug">
+                          {activity}
+                        </p>
+                      ))}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              {relevantCoursework.length > 0 && (
+                <div className="mt-7">
+                  <p className="text-base text-muted-foreground mb-3">Relevant coursework</p>
+                  <div className="flex flex-wrap gap-2.5">
+                    {relevantCoursework.map((course) => (
+                      <a
+                        key={course.code}
+                        href={course.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${course.code} ${course.name} — course website (opens in a new tab)`}
+                        className="inline-flex max-w-full items-baseline gap-1.5 px-3.5 py-2 rounded-full bg-muted/60 border border-border/40 text-base transition-colors hover:border-[var(--vintage-accent)] hover:bg-muted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vintage-accent)]"
+                        data-testid={`course-${course.code.replace(/\s+/g, "-")}`}
+                      >
+                        <span className="shrink-0 whitespace-nowrap font-semibold text-primary">{course.code}</span>
+                        <span className="min-w-0 text-muted-foreground">{course.name}</span>
+                      </a>
                     ))}
                   </div>
-                </li>
-              ))}
-            </ul>
-
-            {relevantCoursework.length > 0 && (
-              <div className="mt-7">
-                <p className="text-base text-muted-foreground mb-3">Relevant coursework</p>
-                <div className="flex flex-wrap gap-2.5">
-                  {relevantCoursework.map((course) => (
-                    <span
-                      key={course.code}
-                      className="inline-flex items-baseline gap-1.5 px-3.5 py-2 rounded-full bg-muted/60 border border-border/40 text-base"
-                      data-testid={`course-${course.code.replace(/\s+/g, "-")}`}
-                    >
-                      <span className="font-semibold text-primary">{course.code}</span>
-                      <span className="text-muted-foreground">{course.name}</span>
-                    </span>
-                  ))}
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </motion.div>
         )}
 

@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
     id: "exp-1",
     title: "AI/ML Engineer Intern",
     company: "Wells Fargo",
-    date: "May 2026 – Present",
+    date: "May 2026 – Aug 2026",
     logoUrl: "/assets/logos/wells-fargo.png",
     domain: "wellsfargo.com",
   },
@@ -77,6 +77,7 @@ export const education: Education[] = [
     date: "2024–2028",
     gpa: "3.9/4.0",
     activities: [
+      "Student Association for Applied Statistics (SAAS) - Machine Learning & Data Science consultant @ UC Berkeley",
       "Computer Science Undergraduate Association — Previous External",
       "CS Scholars - 61A & 61B", 
       "Poker @ Berkeley",
@@ -89,24 +90,26 @@ export const education: Education[] = [
   },
 ];
 
+// Official course sites, checked October 2026. Math links use the department's
+// course pages because the particular instructor/semester isn't specified.
 export const relevantCoursework: Course[] = [
-  { code: "CS 161", name: "Computer Security" },
-  { code: "CS 162", name: "Operating Systems" },
-  { code: "CS 168", name: "Internet Architecture" },
-  { code: "CS 152", name: "Computer Architecture & Engineering" },
-  { code: "CS 170", name: "Efficient Algorithms" },
-  { code: "CS 182", name: "Deep Neural Networks" },
-  { code: "EECS 183", name: "Natural Language Processing" },
-  { code: "EECS 126", name: "Probability & Random Processes" },
-  { code: "EECS 127", name: "Optimization Models" },
-  { code: "CS 70", name: "Discrete Math & Probability" },
-  { code: "CS 61C", name: "Machine Structures" },
-  { code: "CS 61B", name: "Data Structures" },
-  { code: "CS 61A", name: "Computer Programming" },
-  { code: "Math 56", name: "Linear Algebra" },
-  { code: "Math 53", name: "Multivariable Calculus" },
-  { code: "Data 100", name: "Data Analysis & Visualization"},
-  { code: "Data 8", name: "Data Science Foundations" },
+  { code: "CS 161", name: "Computer Security", url: "https://cs161.org/" },
+  { code: "CS 162", name: "Operating Systems", url: "https://cs162.org/" },
+  { code: "CS 168", name: "Internet Architecture", url: "https://fa26.cs168.io/" },
+  { code: "CS 152", name: "Computer Architecture & Engineering", url: "https://cs152.org/" },
+  { code: "CS 170", name: "Efficient Algorithms", url: "https://cs170.org/" },
+  { code: "CS 182", name: "Deep Neural Networks", url: "https://berkeley-cs182.github.io/" },
+  { code: "EECS 183", name: "Natural Language Processing", url: "https://cal-nlp-class.github.io/fa26/" },
+  { code: "EECS 126", name: "Probability & Random Processes", url: "https://inst.eecs.berkeley.edu/~ee126/fa26/info/" },
+  { code: "EECS 127", name: "Optimization Models", url: "https://eecs127.github.io/" },
+  { code: "CS 70", name: "Discrete Math & Probability", url: "https://www.eecs70.org/" },
+  { code: "CS 61C", name: "Machine Structures", url: "https://cs61c.org/" },
+  { code: "CS 61B", name: "Data Structures", url: "https://fa26.datastructur.es/" },
+  { code: "CS 61A", name: "Computer Programming", url: "https://cs61a.org/" },
+  { code: "Math 56", name: "Linear Algebra", url: "https://math.berkeley.edu/node/3700" },
+  { code: "Math 53", name: "Multivariable Calculus", url: "https://math.berkeley.edu/courses/overview/lowerdivcourses/math53" },
+  { code: "Data 100", name: "Data Analysis & Visualization", url: "https://ds100.org/" },
+  { code: "Data 8", name: "Data Science Foundations", url: "https://data8.org/" },
 ];
 
 export const skills: Skill[] = [

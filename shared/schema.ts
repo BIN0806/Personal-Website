@@ -74,6 +74,7 @@ export const educationSchema = z.object({
 export const courseSchema = z.object({
   code: z.string(),
   name: z.string(),
+  url: z.string().url(),
 });
 
 export const otherProjectSchema = z.object({

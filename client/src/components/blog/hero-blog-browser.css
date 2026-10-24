@@ -1,0 +1,45 @@
+.hero-blog-browser {
+  --hero-blog-row-height: 64px;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--vintage-ink);
+}
+.hero-blog-heading { position: relative; display: grid; grid-template-columns: 80px minmax(0, 1fr) 80px; align-items: center; min-height: 34px; }
+.hero-blog-heading h2 { grid-column: 2; margin: 0; font-family: var(--font-sans) !important; font-size: 13px; font-weight: 600; letter-spacing: .13em; line-height: 1.6; text-transform: uppercase; cursor: default; }
+.hero-blog-back { grid-column: 1; grid-row: 1; display: inline-flex; align-items: center; gap: 6px; justify-self: start; font-size: 12px; color: var(--vintage-muted); }
+.hero-blog-back:hover, .hero-blog-footer-link:hover { color: var(--vintage-accent); }
+.hero-blog-description { margin: 10px auto 23px; max-width: 480px; font-size: 13px; line-height: 1.8; color: var(--vintage-muted); }
+/* Exactly five fixed-height rows fit. Scrolling is still available by touch,
+   wheel, trackpad, and keyboard even though both scrollbar styles are hidden. */
+.hero-blog-list { max-height: calc(5 * var(--hero-blog-row-height) + 1px); overflow-y: auto; overscroll-behavior-y: contain; scrollbar-width: none; -ms-overflow-style: none; border-top: 1px solid #e3e1dc; }
+.hero-blog-list::-webkit-scrollbar { display: none; width: 0; height: 0; }
+.hero-blog-menu-row, .hero-blog-update-row { width: 100%; height: var(--hero-blog-row-height); display: grid; grid-template-columns: 24px minmax(0, 1fr) 24px; align-items: center; gap: 12px; padding: 0 16px; border-bottom: 1px solid #e3e1dc; transition: background .15s, color .15s; }
+.hero-blog-menu-row { grid-template-columns: 100px minmax(0, 1fr) 100px; font-size: 16px; text-align: center; }
+.hero-blog-menu-row time { color: #74746e; font: 10px/1.6 var(--font-mono); font-weight: 400; text-align: left; }
+.hero-blog-menu-row svg { color: #929187; justify-self: center; }
+.hero-blog-menu-row svg:first-child { justify-self: start; }
+.hero-blog-menu-row svg:last-child { justify-self: end; }
+.hero-blog-menu-row:hover, .hero-blog-update-row:hover { color: var(--vintage-accent); background: color-mix(in srgb, var(--vintage-ink) 3%, transparent); }
+.hero-blog-menu-row > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hero-blog-update-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; color: var(--vintage-muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.hero-blog-update-row { grid-template-columns: 100px minmax(0, 1fr) 18px; text-align: left; font-size: 13px; }
+.hero-blog-update-row time { color: #76746c; font: 10px/1.6 var(--font-mono); }
+.hero-blog-update-row > span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.5; }
+.hero-blog-footer-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin-top: 20px; font-size: 11px; color: #76746c; }
+.hero-blog-scroll-hint { margin-top: 10px; font-size: 10px; color: #76746c; }
+.hero-blog-browser :is(button, a, [tabindex]):focus-visible { outline: 2px solid var(--vintage-accent); outline-offset: -3px; border-radius: 3px; }
+.hero-blog-heading h2:focus { outline: none; }
+@media (max-width: 480px) {
+  .hero-blog-heading { grid-template-columns: 64px minmax(0, 1fr) 64px; }
+  .hero-blog-heading h2 { font-size: 11px; letter-spacing: .09em; }
+  .hero-blog-menu-row { grid-template-columns: 70px minmax(0, 1fr) 70px; gap: 6px; padding-inline: 8px; font-size: 14px; }
+  .hero-blog-menu-row > span { white-space: normal; text-overflow: clip; line-height: 1.4; }
+  .hero-blog-menu-row time { font-size: 9px; }
+  .hero-blog-update-row { grid-template-columns: 76px minmax(0, 1fr) 16px; gap: 8px; padding-inline: 8px; font-size: 12px; }
+  .hero-blog-update-row time { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-blog-browser * { transition: none !important; }
+}
