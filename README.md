@@ -38,7 +38,7 @@ to America/Los_Angeles, rather than chat sidebar recency or file modification ti
 
 | Notebook | Last worked |
 | --- | --- |
-| LLM Kernel Inference | 2026-10-23 |
+| LLM Kernel Inference | 2026-10-25 |
 | SAAS / Resemble AI | 2026-10-21 |
 | LLM Inference | 2026-10-07 |
 | PCAP | 2026-10-04 |
@@ -48,25 +48,37 @@ to America/Los_Angeles, rather than chat sidebar recency or file modification ti
 The collection is in `projects/projects.tsx`. LLM Kernel Inference has its own
 `notebooks/llm-kernel-inference.tsx` and one separate article per completed chunk:
 
-| Chunk | Article URL under `/blog/projects/llm-kernel-inference/` | Source commit in `BIN0806/GPU-Inference` |
-| --- | --- | --- |
-| 1: A page pool before a GPU | `chunk-1-page-pool` | `f1b120ee807de78aaf07987754e75fcc1a8ec3eb` |
-| 2: Sharing pages without sharing writes | `chunk-2-shared-pages` | `675a8c729712ff1bdb73cb02e2f5dfde57cf6a61` |
-| 3: Request tables that fail atomically | `chunk-3-request-transactions` | `5befbdfe44bcda7db883d6135927e98ac7ced3c2` |
+| Chunk | Article URL under `/blog/projects/llm-kernel-inference/` | Implementation commit | Evidence follow-up |
+| --- | --- | --- | --- |
+| 1: A page pool before a GPU | `chunk-1-page-pool` | [3d4f690](https://github.com/BIN0806/GPU-Inference/commit/3d4f690061a7e36c992313bd6b14bd35218c24bc) | — |
+| 2: Sharing pages without sharing writes | `chunk-2-shared-pages` | [b3ffc58](https://github.com/BIN0806/GPU-Inference/commit/b3ffc58d08619de16d12114dc4fd612891522b1d) | — |
+| 3: Request tables that fail atomically | `chunk-3-request-transactions` | [8b3bd75](https://github.com/BIN0806/GPU-Inference/commit/8b3bd7531f744784a02399be0a91c8ff9edf185b) | — |
+| 4: Measuring page use and CPU workloads | `chunk-4-cpu-workloads` | [94ee297](https://github.com/BIN0806/GPU-Inference/commit/94ee2973597c015629bf8618c49c941862d4d2ef) | — |
+| 5: Proving the sanitizer can see | `chunk-5-sanitizer-validation` | [a5041ec](https://github.com/BIN0806/GPU-Inference/commit/a5041ece6e01c559161c354474239bad22ab4928) | [7e82018](https://github.com/BIN0806/GPU-Inference/commit/7e820180a242b39a2a2082f6a28a395d207fef7d) |
+| 6: Growing request tables with suffix rollback | `chunk-6-request-storage-reuse` | [d0ad3a8](https://github.com/BIN0806/GPU-Inference/commit/d0ad3a8b459fa52ce1cfa16964a7b783b485eafb) | [05611b7](https://github.com/BIN0806/GPU-Inference/commit/05611b773b065973115096b9d8d50542fb043b8d) |
+| 7: Defining residual RMSNorm before fusion | `chunk-7-rmsnorm-contract` | [e76e02b](https://github.com/BIN0806/GPU-Inference/commit/e76e02b602eacfca184e1a9dff0fb7c9a25d8061) | [b2a970f](https://github.com/BIN0806/GPU-Inference/commit/b2a970f681da619b69b512c7e4dd1b7e0e05998d) |
 
-The posts adapt the corresponding commit's code, authored article, and validation
-record. Each exposes its commit link near the opening and a source section with
-files pinned to the full SHA. `notebooks/kernel-inference/sources.tsx` holds those
-revisions and dates. The first three commits reconstruct validated development
-snapshots; the linked history notes explain that provenance. Their date is
-2026-10-23 in America/Los_Angeles, and the updates array lists 3, 2, 1 to preserve
-that progression when calendar dates tie. The posts retain CPU-only scope,
-actual findings versus injected failures, and the unresolved ASan status.
+The posts follow public commit changes, design decisions, experiment reports,
+and recorded validation. Each exposes its implementation link near the opening
+and a source section with files pinned to full SHAs. Completed evidence gets its
+own follow-up commit link, so a result pending at implementation time is not
+presented as already executed. `notebooks/kernel-inference/sources.tsx` holds
+these revisions and dates. The first three commit IDs were updated after source
+history cleanup; they link public engineering records instead of ignored local
+blog drafts and raw artifacts. Their code/test/build inputs are unchanged.
+
+Dates use America/Los_Angeles: chunks 1–3 are October 23, chunk 4 is October 24,
+and chunks 5–7 are October 25. The updates array lists 7 through 1 to break
+same-date ties in chunk order. CPU performance, CPU correctness, prepared GPU
+probes, and actual device execution remain distinct. Linux ASan passes are
+documented from chunk 5 onward; the local Mac startup problem stays unresolved.
 
 For each future completed chunk, read its commit and pinned evidence, add a new
 content component and source record, then add a separate entry to this notebook's
-updates array. Keep existing slugs and historical scope stable. Do not create
-posts for planned chunks or infer measured speedups from test durations.
+updates array. Group validation-only follow-ups with their chunk. Include actual
+problems, remedies, measured tradeoffs, and remaining limits. Keep existing slugs
+and historical scope stable. Do not create posts for planned chunks or infer
+measured speedups from test durations.
 
 The other project content is in `notebooks/project-history.tsx`. Each notebook includes a short overview,
 implemented work, documented problems and solutions, the last activity, and a

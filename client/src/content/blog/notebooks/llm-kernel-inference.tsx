@@ -2,6 +2,10 @@ import type { BlogSetup, BlogUpdate } from "@/lib/blog";
 import { ArticleNote, ArticleSection, CodeBlock } from "@/components/blog/article-blocks";
 import chunkTwo from "./kernel-inference/chunk-two";
 import chunkThree from "./kernel-inference/chunk-three";
+import chunkFour from "./kernel-inference/chunk-four";
+import chunkFive from "./kernel-inference/chunk-five";
+import chunkSix from "./kernel-inference/chunk-six";
+import chunkSeven from "./kernel-inference/chunk-seven";
 import { ChunkSources, CommitSource, kernelSources } from "./kernel-inference/sources";
 
 // Adapted from this project's authored Chunk 01 post and its validation record:
@@ -157,10 +161,10 @@ const chunkOne: BlogUpdate = {
 const llmKernelInference: BlogSetup = {
   slug: "llm-kernel-inference",
   title: "LLM Kernel Inference",
-  description: "Building inference components in explained increments. The first three chunks cover a CPU page pool, sealed-page sharing, and transactional request tables; GPU kernels and paged decode come later.",
-  categories: ["Allocator foundations", "Shared ownership", "Request transactions"],
-  // All three commits share a calendar date; stable sorting keeps later chunks first.
-  updates: [chunkThree, chunkTwo, chunkOne],
+  description: "Building inference components in explained increments: CPU ownership, workload measurements, storage reuse, and a numerical reference for residual RMSNorm. GPU kernels and device validation come next.",
+  categories: ["Allocator foundations", "Shared ownership", "Request transactions", "CPU measurement", "Validation & tooling", "Numerical contracts"],
+  // Keep later chunks first when commit calendar dates tie; date sorting is stable.
+  updates: [chunkSeven, chunkSix, chunkFive, chunkFour, chunkThree, chunkTwo, chunkOne],
 };
 
 export default llmKernelInference;
