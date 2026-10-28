@@ -1,0 +1,64 @@
+{
+  "project": "Nolan / AMC Event Study",
+  "phase": "eventStudy",
+  "commits": [
+    {
+      "sha": "a58d5f18bbf943c6191f9b5d2d24efd1e7dc420d",
+      "timestamp": "2026-09-16T10:03:27-07:00",
+      "subject": "docs: add user-requested interview methodology and volatility plan"
+    },
+    {
+      "sha": "2bb33669b10819dbb903911d3e6c3a5cfa9dc9c1",
+      "timestamp": "2026-09-16T10:12:30-07:00",
+      "subject": "feat: implement event inference GARCH diagnostics and scientific validation tests"
+    },
+    {
+      "sha": "cc082fff892fdb23d21c895cd4257de672242106",
+      "timestamp": "2026-09-16T10:21:47-07:00",
+      "subject": "docs: author complete interview-focused research notebook and reproduction guide"
+    },
+    {
+      "sha": "a4451c791af4f3bb5cfdd7826010660eeb2a317c",
+      "timestamp": "2026-09-16T10:27:12-07:00",
+      "subject": "feat: deliver executed study with verified artifacts and locked reproduction environment"
+    }
+  ],
+  "records": [
+    {
+      "commit": "a4451c791af4f3bb5cfdd7826010660eeb2a317c",
+      "path": "results/assessment.md",
+      "sha256": "6074fcaa5787ab33373e69ae74886a334258cec6f2d7fcb72e9e3c54888280be",
+      "selection": "full-text",
+      "content": "# Evidence assessment\n\nThe four eligible first releases have mean AMC CAR[-1,+1] of 16.12%, with a 95% film-level t interval of [-8.15%, 40.40%], SE 7.63%, t(3)=2.114, and two-sided p=0.1249. The six-window Holm-adjusted p is 0.6247; exact sign-flip and Wilcoxon p values are 0.125 and 0.125. The film bootstrap interval [3.85%, 28.39%] is descriptive and can be misleadingly narrow with four observed positive events.\n\nThe year/weekday placebo comparison gives p=0.0070. This is evidence about unusual timing relative to its selected background-date distribution, conditional on unverified exchangeability. It does not resolve small event-count uncertainty or isolate a Nolan effect. Report the placebo and film-level tests together; they test different reference distributions. In explicitly post-hoc checks, removing Oppenheimer gives placebo p=0.1138, whereas removing Tenet gives p=0.0002. The locally volatility-matched Oppenheimer pool is empty, so that stress test is unavailable rather than forced.\n\nThe point estimate is large relative to a 1% reference, but the interval includes losses. All planned return specifications must be read together in robustness.csv; effect magnitude is not reliable profitability, and CAR is not compounded wealth. Oppenheimer overlaps Barbie and AMC litigation/financing news; Tenet overlaps pandemic reopenings. Broad market and Cinemark controls do not identify those shocks.\n\nAMC's distribution is highly non-Gaussian and its regimes differ. GARCH/GJR models allow time-varying conditional risk; 1 of 8 fits reach the covariance-stationarity boundary. Standardized CARs remain conditional model diagnostics and do not remove confounding or solve four-event power.\n\nConclusion: these data show positive release-window associations in the four observed cases, but do not establish a stable, director-specific abnormal-return effect. The primary test does not reject zero at 5%. This is not proof of no effect, and it is not a causal or actionable trading result.\n",
+      "exported_text_sha256": "6074fcaa5787ab33373e69ae74886a334258cec6f2d7fcb72e9e3c54888280be"
+    },
+    {
+      "commit": "a4451c791af4f3bb5cfdd7826010660eeb2a317c",
+      "path": "docs/validation_report.md",
+      "sha256": "bd216b954db48fb5b5497f3f9e4a8dbe7b604cec93d2b5b8c3adc7d03f40eb06",
+      "selection": "full-text",
+      "content": "# Validation report — 2026-09-16\n\n- Installed the pinned project requirements into a fresh Python 3.12.7 virtual environment with no inherited site packages (macOS arm64).\n- Executed all **21 code cells**, in order, in a fresh local Jupyter kernel without cell errors. Saved the executed 48-cell notebook and exported HTML.\n- Ran **10 scientific tests**, all passing: raw checksums/calendar; holiday/weekend alignment; no-imputation and duplicate policy; return identity and no future mean-fit leakage; independent CAR variance formula; film-level inference and exact-test resolution; explicit failures on missing observations; matched-placebo exclusions and repeatability; lag-only GARCH updates/scaling; option parity and finite-difference vega.\n- `pip check` reported no broken requirements. Pinned Mistune 2.0.4 after a clean install exposed an incompatibility between the newer parser and the selected nbconvert release. Pinned pyparsing 3.1.2 to match the plotting version. Full resolved versions are in `requirements-lock.txt`.\n- Final artifact validator verified all 18 numbered sections; sequential execution counts; no notebook error outputs; all 13 embedded figure tags and 26 PNG/SVG exports; raw/metadata hashes; and the saved primary mean/SE/p against a separate direct SciPy calculation.\n- Clean-environment return tables agree with the initial environment. GARCH numeric artifacts agree within relative 2e-4 / absolute 2e-6 tolerance for optimizer/library-path differences. Random placebo/bootstrap draws are seeded.\n- Visually inspected price history, ACF, individual-event paths, placebo comparison, GARCH paths and robustness intervals. Labels, source notes and interval extents are readable; no result is hidden by trimming return outliers.\n- `journal.MD` is excluded by `.gitignore` and is not tracked. Only the dedicated project repository is committed.\n\n## Re-run validation\n\n```bash\npython scripts/run_notebook.py\npython -m pytest -q\npython scripts/validate_artifacts.py\npython -m pip check\n```\n\nEquation rendering in HTML may request MathJax from the exporter's CDN. All market computations and embedded figures/tables reproduce offline. A notebook failure prevents successful completion; there is no synthetic-data fallback.\n",
+      "exported_text_sha256": "bd216b954db48fb5b5497f3f9e4a8dbe7b604cec93d2b5b8c3adc7d03f40eb06"
+    },
+    {
+      "commit": "a4451c791af4f3bb5cfdd7826010660eeb2a317c",
+      "path": "results/tables/tests.csv",
+      "sha256": "4a36c1e432b6f194646e4aaf587eb75326a7bcf88777ce931fac1fa5ed578a70",
+      "selection": "full-text",
+      "content": "window,n,mean,se,t,df,p,ci_low,ci_high,signflip_p,wilcoxon_stat,wilcoxon_p,bootstrap_low,bootstrap_high,holm_p\n\"[-1,+1]\",4,0.161229312526,0.0762842407918,2.11353368471,3,0.12494695176,-0.0815411877334,0.403999812785,0.125,0,0.125,0.038520137325,0.283938487727,0.624734758798\n\"[-3,+3]\",4,0.0959839791189,0.0399834953531,2.40059000023,3,0.0958236317307,-0.0312613479399,0.223229306178,0.125,0,0.125,0.0364209810099,0.174006515005,0.574941790384\n\"[-5,+5]\",4,0.0476230323449,0.0544735106559,0.874242026472,3,0.44633386432,-0.125735990378,0.220982055068,0.5,3,0.625,-0.0439976330366,0.139243697726,1\n\"[-10,+10]\",4,0.0574515423726,0.106425892305,0.539826738855,3,0.626811906232,-0.281243145379,0.396146230125,0.625,3,0.625,-0.124770429177,0.217483533425,1\n\"[+0,+1]\",4,0.108503252464,0.0802787978138,1.35158043493,3,0.269390036618,-0.146979711031,0.363986215959,0.25,1,0.25,0.00739291212448,0.262130242783,1\n\"[+0,+5]\",4,0.0208120036221,0.0401176364973,0.51877442041,3,0.639756765819,-0.106860220426,0.14848422767,0.625,3,0.625,-0.0438621395921,0.0997820720311,1\n",
+      "exported_text_sha256": "4a36c1e432b6f194646e4aaf587eb75326a7bcf88777ce931fac1fa5ed578a70"
+    },
+    {
+      "commit": "2bb33669b10819dbb903911d3e6c3a5cfa9dc9c1",
+      "path": "src/event_study.py",
+      "sha256": "a1e5e3a208aa9ee0abf4d14357d3fb3ec0a3c6f6ef424c2aaf69b3ad06a26010",
+      "selection": "hash-only"
+    },
+    {
+      "commit": "2bb33669b10819dbb903911d3e6c3a5cfa9dc9c1",
+      "path": "src/volatility.py",
+      "sha256": "75451cbf5ab7a6b835632538112e895029be6cb690584af26ddd2549364bf93b",
+      "selection": "hash-only"
+    }
+  ]
+}

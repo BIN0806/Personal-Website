@@ -234,40 +234,5 @@ export const monkeyType = historyNotebook({
   tags: ["TypeScript", "Typing analytics", "Open source fork"],
 });
 
-export const nolanAmc = historyNotebook({
-  slug: "nolan-amc-event-study",
-  title: "Nolan / AMC Event Study",
-  description: "A reproducible notebook examining AMC returns around Christopher Nolan film releases.",
-  lastWorked: "2026-09-16",
-  updateTitle: "Testing the event story against confounders",
-  overview: "The study asks whether film-release events are associated with unusual AMC stock returns. It combines an event-study workflow with model diagnostics, placebo checks, and attention to other events that could explain the same price movements.",
-  work: [
-    "Built and executed a research notebook with figures, statistical tests, and a reproducible methodology.",
-    "Examined volatility, leverage, placebo timing, and sensitivity to individual events.",
-    "Added research on media attention, Barbenheimer, competing films, earnings, and financing news.",
-  ],
-  // Evidence: event-study implementation log, assessment and validation report.
-  challenges: [
-    {
-      title: "Two reasonable tests told different stories",
-      problem: "The four-event average looked large, and the placebo timing test looked promising. But the film-level interval was wide and the main test did not reject zero. Removing Oppenheimer also weakened the placebo result.",
-      resolution: "I reported both tests with their different reference distributions, retained the planned event windows, and added leave-one-event-out checks. The attention extension tested overlapping publicity and financing explanations with a joint multiple-testing correction.",
-      lesson: "The apparent story was not stable enough to support a director-specific causal conclusion. The result became a study of uncertainty and confounding rather than a claim that a large point estimate proved an effect.",
-    },
-    {
-      title: "Adjusted stock prices did not resolve every corporate action",
-      problem: "AMC's APE distribution was not fully reconstructed as shareholder wealth by the vendor's adjusted series. Treating 'adjusted' as a complete total-return guarantee would have hidden a material limitation.",
-      resolution: "I flagged affected estimates and added post-APE estimation alternatives rather than inventing missing prices. The notebook keeps those sensitivities and the overlapping company events visible.",
-      lesson: "This bounds what the return series can answer; it does not repair the missing wealth history. Data definitions matter as much as the regression code.",
-    },
-    {
-      title: "The notebook failed the clean-environment check",
-      problem: "A fresh install exposed an incompatibility between the selected notebook exporter and the newer Markdown parser, plus a plotting-parser version mismatch.",
-      resolution: "I pinned the compatible dependencies, saved the resolved requirements, and reran every code cell in a fresh kernel. Independent scientific tests and an artifact validator checked the saved results and figures.",
-      lesson: "A notebook that runs in the original environment is not yet reproducible. The clean-environment run turned dependency assumptions into an explicit part of the project.",
-    },
-  ],
-  latestWork: "Added confounder research and exploratory attention tests. The attention relationships did not survive multiple-testing correction, and the study did not establish a reliable Nolan-specific causal effect.",
-  next: "Explore a broader film-and-exhibitor panel and document how results change across event windows and alternative controls.",
-  tags: ["Python", "Jupyter", "Quantitative research"],
-});
+// Detailed, commit-sourced research stages live in their own notebook.
+export { default as nolanAmc } from "./nolan-amc";

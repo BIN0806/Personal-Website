@@ -43,7 +43,7 @@ to America/Los_Angeles, rather than chat sidebar recency or file modification ti
 | LLM Inference | 2026-10-07 |
 | PCAP | 2026-10-04 |
 | Monkey Type Fork | 2026-09-27 |
-| Nolan / AMC Event Study | 2026-09-16 |
+| Nolan / AMC Event Study | 2026-10-27 |
 
 The collection is in `projects/projects.tsx`. LLM Kernel Inference has its own
 `notebooks/llm-kernel-inference.tsx` and one separate article per completed chunk:
@@ -80,7 +80,40 @@ problems, remedies, measured tradeoffs, and remaining limits. Keep existing slug
 and historical scope stable. Do not create posts for planned chunks or infer
 measured speedups from test durations.
 
-The other project content is in `notebooks/project-history.tsx`. Each notebook includes a short overview,
+Nolan / AMC now has its own `notebooks/nolan-amc.tsx` with four substantial
+research stages, rather than a post for every commit:
+
+| Stage | Article slug | Work date (America/Los_Angeles) | Commit group |
+| --- | --- | --- | --- |
+| Protocol and frozen inputs | `part-1-protocol-and-data` | 2026-09-16 | `e755b02` → `addcf2a` |
+| Executed event study | `part-2-event-study` | 2026-09-16 | `a58d5f1` → `a4451c7` |
+| Attention and confounders | `part-3-attention-and-confounders` | 2026-09-16 | `39e20e1` → `80bacbf` |
+| Research audit and proposed options extension | `part-4-options-research-audit` | 2026-10-27 | `b1e78a7` |
+
+The notebook remains at `/blog/projects/nolan-amc-event-study`; its former
+`work-log` URL redirects there. Same-day entries keep reverse stage order.
+The October 28 relocation/reference-bundling commit is not a research stage and
+does not update the notebook date. Only substantial work gets a new post;
+related fixes and evidence follow-ups belong with their stage.
+
+This research checkout has no configured public remote. Source citations use
+local commit IDs and downloadable JSON records under `client/public/blog/nolan-amc/sources/`.
+These contain selected committed research documents/results and full SHA-256
+identities; hash-only code references are labeled. No repository URL is invented.
+The two research figures are copied unchanged from their executed revisions.
+Regenerate the records, provenance module, and figures with:
+
+```bash
+python3 scripts/export-nolan-blog-sources.py --repository /path/to/amc_nolan
+```
+
+The exporter reads Git objects and never changes the research repository. It
+does not copy raw market payloads, notebooks, personal interview material, or
+unrelated reference projects. Article text distinguishes historical execution,
+current audit findings, and proposed options work. Options strategy performance
+is unavailable; the equity CAR is not a strategy return or causal estimate.
+
+The remaining project content is in `notebooks/project-history.tsx`. Each notebook includes a short overview,
 implemented work, documented problems and solutions, the last activity, and a
 prompt for a future update. Problem narratives are grounded in the repositories'
 decision logs, validation reports, and Codex work history; unresolved limits are
